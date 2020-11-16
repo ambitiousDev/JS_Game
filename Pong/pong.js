@@ -71,8 +71,8 @@ var ball = {
     x: canvas.width / 2,
     y: canvas.height / 2,
     radius: 20,
-    dx: -6,
-    dy: -3,
+    dx: -10,
+    dy: -5,
     side: 'right',
     setSide() {
         if (this.x < canvas.width / 2) {
