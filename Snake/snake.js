@@ -14,6 +14,8 @@ var snake = {
     dx: SPEED,
     dy: 0,
     head: 'right',
+    width: 15,
+    height: 15,
     drawSnake() {
         if (this.turnUp) {
             this.dx = 0;
@@ -45,7 +47,7 @@ var snake = {
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.beginPath();
-        ctx.rect(this.x, this.y, 15, 15);
+        ctx.rect(this.x, this.y, this.width, this.height);
         ctx.fill();
         ctx.closePath();
     }
